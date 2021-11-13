@@ -63,6 +63,16 @@ document.querySelector("#slider").addEventListener("change", function() {
 	document.getElementById("volume").innerHTML = videoVolume + "%";
 	console.log(video.volume);	
 });
+
+document.querySelector("#vintage").addEventListener("click", function() {
+	video.classList.add("oldSchool");
+	console.log("Old school");
+});
+
+document.querySelector("#orig").addEventListener("click", function() {
+	video.classList.remove("oldSchool");
+	console.log("Origin");
+});
 // document.querySelector("#play").addEventListener("click", function() {
 // 	console.log("Play Video");
 // });
