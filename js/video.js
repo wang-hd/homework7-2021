@@ -44,15 +44,14 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
-	var videoVolume = document.getElementById("slider").value/100;
 	var isMute = document.getElementById("mute").innerHTML;
 	if (isMute == "Mute") {
 		document.getElementById("mute").innerHTML = "Unmute";
-		video.volume = 0;
+		video.muted = true;
 	}
 	else {
 		document.getElementById("mute").innerHTML = "Mute";
-		video.volume = videoVolume;
+		video.muted = false;
 	}
 });
 
